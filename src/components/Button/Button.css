@@ -1,0 +1,238 @@
+.com-button>a:hover{
+  cursor:pointer;
+}
+
+.pop{
+  display: inline-block;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  outline: none;
+  color: #000;
+  background-color: #e06c78;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 0 -2px #fff, 0 0 0 -1px #f10505;
+  transition: box-shadow .3s;
+}
+.pop:hover,
+.pop:focus{
+  background-color: rgb(255, 154, 22);
+  color: #fff;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f10505;
+  transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  animation: gelatine 0.5s 1;
+}
+.pop:active{
+  background: #4ecdc4;
+  transition-duration: 0;
+  box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #3ac7bd;
+}
+
+.normal{
+  display:flex;
+  align-items: center;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #333;
+  border: 1px solid #999;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.normal:hover{
+  opacity: 70%;
+  
+}
+.normal:active{
+  transition: none;
+  box-shadow: 0px 0px 10px #333;
+}
+.primary{
+  display:flex;
+  align-items: center;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #fff;
+  background-color: #3689e9;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.primary:hover{
+  opacity: 70%;
+  
+}
+.primary:active{
+  transition: none;
+  box-shadow: 0px 0px 10px #3689e9;
+}
+.error{
+  display:flex;
+  align-items: center;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #fff;
+  background-color: #ee3939;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.error:hover{
+  opacity: 70%;
+  cursor:pointer;
+}
+.error:active{
+  transition: none;
+  box-shadow: 0px 0px 10px #333;
+}
+.warning{
+  display:flex;
+  align-items: center;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #fff;
+  background-color: #f5b01b;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.warning:hover{
+  opacity: 70%;
+  cursor:pointer;
+}
+.warning:active{
+  transition: none;
+  box-shadow: 0px 0px 10px #333;
+}
+.circle{
+  display:inline-block;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background-color: #3689e9;
+  border: 0px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.circle:hover{
+  opacity: 70%;
+  cursor:pointer;
+}
+.upload{
+  display:inline-block;
+  text-align: center;
+  padding: 20px 0px 0px 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #3689e9;
+  border: 0px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.upload:hover{
+  opacity: 70%;
+  cursor:pointer;
+}
+.dash{
+  display:flex;
+  align-items: center;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #333;
+  background-color: transparent;
+  border: 1px dashed #666;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.dash:hover{
+  color: #fff;
+  background-color: red;
+  opacity: 70%;
+  cursor:pointer;
+}
+.large{
+  padding: 0 60px;
+  height: 50px;
+}
+.small{
+  font-size: small;
+  padding: 0 18px;
+  height: 24px;
+}
+.round{
+  display: inline-block;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #fff;
+  background-color: #3689e9;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.round:hover{
+  opacity: 70%;
+  cursor:pointer;
+}
+.link{
+  display:flex;
+  align-items: center;
+  padding: 10px 15px ;
+  text-align: center;
+  width: auto;
+  color: #3689e9;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.link:hover{
+  opacity: 70%;
+  cursor:pointer;
+}
+
+@keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+
+  from, to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+}

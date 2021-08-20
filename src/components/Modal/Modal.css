@@ -1,0 +1,36 @@
+.wrap-Modal{
+    position: relative;
+}
+.btn-modal{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 205px;
+    left:350px;
+}
+.modal-contain{
+    position: fixed;
+    align-items: center;
+    display: flex;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 8px;
+    width: 500px;
+    height: 250px;
+    font-size: small;
+    background-color: #fff;
+    box-shadow: 0 0 5px var(--f-color-2);
+    z-index: 999;
+}
+.modal-contain>i{
+    width: 16px;
+    margin-right: 10px;
+}
+
+.modal-contain>p{
+    color: var(--color-1);
+}
+.modal-contain>.btn-modal>a{
+   margin-right: 10px;
+}

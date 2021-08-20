@@ -1,0 +1,40 @@
+.tag{
+    display:flex;
+    align-items:center;
+    height:20px;
+    padding: 10px;
+    font-size:15px;
+    color:var(--color-1);
+    background-color:var(--bg-color);
+    border-top:1px solid var(--border-color);
+    border-bottom:1px solid var(--border-color);
+}
+
+.tag::before{
+    position: relative;
+    top: 0;
+    left: -18px;
+    content: '';
+    width:15px;
+    height:15px;
+    border-right:1px solid var(--border-color);
+    border-top:1px solid var(--border-color);
+    transform:rotate(45deg);
+    background-color:var(--color-3);
+    border-radius:0 0 0 100%;
+    z-index: 0;
+}
+
+.tag::after{
+    position: relative;
+    top: 0;
+    right: -18px;
+    content: '';
+    width:15px;
+    height:15px;
+    border-right:1px solid var(--border-color);
+    border-top:1px solid var(--border-color);
+    background-color:var(--bg-color);
+    z-index: 1;
+    transform:rotate(45deg)
+}

@@ -1,0 +1,150 @@
+
+.main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+    padding-top: 80px;
+    padding-bottom: 40px;
+    /* background-color: #fff; */
+}
+
+@media (max-width: 1150px)
+{
+    .main-right {
+        display:none;
+    }
+
+    .wrap{
+        width: 1000px !important;
+    }
+}
+.wrap {
+    box-sizing: content-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    min-width: 800px;
+}
+
+.main-left{
+    padding: 0;
+    margin:0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    width: 660px;
+    min-height: 660px;
+    /* background-color: var(--color-3); */
+}
+
+.main-right {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 320px;
+    margin-left: 20px;
+    /* background-color: var(--color-3); */
+}
+
+.main-list{
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.main-list li{
+    margin-bottom:5px;
+    list-style: none;
+}
+
+.main-list li p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin:10px 0;
+}
+
+.main-right>div{
+    margin-bottom: 20px;
+}
+
+.article-list{
+    padding: 0;
+    margin: 0;
+    color: var(--f-color-3);
+    font-size: 14px;
+
+}
+.article-list>li{
+    display:flex;
+    flex-direction: column;
+    list-style:none;
+}
+
+.article-list>li:not(:first-child){
+    margin-top:5px;
+}
+
+.article-list a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--f-color-4);
+}
+
+.article-list a:hover{
+    color: var(--color-1);
+}
+
+.categorie-list{
+    padding: 0;
+    margin: 0;
+    color: var(--f-color-3);
+    font-size: 14px;
+}
+
+.categorie-list>li{
+    display:flex;
+    align-items: center;
+    list-style:none;
+}
+.categorie-list>li:not(:first-child){
+    margin-top:5px;
+}
+
+.categorie-list>li>span:last-child{
+    margin-left:15px;
+}
+
+.categorie-list a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--f-color-4);
+}
+.categorie-list a:hover{
+    color: var(--color-1);
+}
+
+
+.beian{
+    display:flex;
+    flex-direction:column;
+    font-size: 16px
+}
+.beian>a{
+    font-size: 14px;
+    color: var(--f-color-3);
+    padding-top:10px;
+}
+
+.home-loading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+}

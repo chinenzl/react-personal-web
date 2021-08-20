@@ -1,0 +1,8 @@
+.loading-warp{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background:#03a9f4 */
+    margin-top: 80px;
+}

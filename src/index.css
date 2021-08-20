@@ -1,0 +1,63 @@
+/* 全局变量 */
+:root{
+  --color-1:#0099cc;
+  --color-2:rgba(255, 255, 255, 0.2);
+  --color-3:#fff;
+  --color-4:rgba(255, 255, 255, 0.8);
+  --color-5:#99CC99;
+  --bg-color:#EBF0F0;
+  --f-color-1:#fff;
+  --f-color-2:#666666;
+  --f-color-3:#999;
+  --f-color-4:#2C3E50;
+  --border-color: #e5e7eb;
+  --padding-1:20px;
+  --nav-h:67px;
+}
+
+/*所有标签的margin，padding清零*/
+*{
+  /* padding:0px;
+  margin:0px; */
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:var(--bg-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.clearfix:after{  /*最简方式*/
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 新浪使用方式
+.clearfix:after{ 
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+*/
+.clearfix{ /*兼容 IE*/
+  zoom: 1;
+}
+
+::selection {
+  background:var(--color-1); 
+  color:var(--color-3);
+}
+a{
+  text-decoration: none;
+}
